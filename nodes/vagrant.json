@@ -1,0 +1,8 @@
+{
+  "ndenv": {
+    "user": "vagrant",
+    "home": "/home/vagrant",
+    "versions": ["v0.12.0", "iojs-v1.2.0"],
+    "global": "v0.12.0"
+  }
+}
