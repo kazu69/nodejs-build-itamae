@@ -56,3 +56,9 @@ execute "set global node #{node["ndenv"]["global"]}" do
   user node['ndenv']['user'] if user node['ndenv']['user']
   not_if "ndenv global | grep #{node["ndenv"]["global"]}"
 end
+
+execute "set environemt variables" do
+  command <<-EOH
+    echo 'export NODE_ENV=development' >> #{node["ndenv"]["home"]}/.bash_profile
+  EOH
+end

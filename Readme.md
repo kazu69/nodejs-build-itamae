@@ -29,7 +29,7 @@ Build Dcoker environment.
 
 ```sh
 # create container
-bundle exec itamae docker cookbooks/base/node_build.rb --node-json=nodes/node.json --image=IMAGE --no-tls-verify-peer
+bundle exec itamae docker cookbooks/base/node_build.rb --node-json=nodes/docker.json --image=IMAGE --no-tls-verify-peer
 
 # docker run
 docker run -it ContainerID /bin/bash
@@ -43,4 +43,3 @@ ndenv versions
 ```
 bundle exec rake spec
 ```
-
